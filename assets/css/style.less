@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'myfont';
+  src: url('../fonts/dancing.ttf')
+}
+// Default Styles
+.text-center{
+  text-align: center;
+}
+// Default Styles End
+
+
+body{
+	overflow: hidden;
+}
+
+img.emoji{
+	height: 1em;	
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+}
+
+.body{
+  height:100vh;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ddd;
+  .profile{
+    padding-top: 30vh;
+  }
+
+  .profile-img {
+    img{
+      float: right;
+      width: 150px;
+      border: 6px solid #fff;
+    }
+  }
+
+  .profile-intro{
+    h1{
+      margin-bottom: 5px;
+    }
+
+    h2{
+      margin-top:0px;
+      margin-bottom:0px;
+      font-style: italic;
+      font-weight: 100;
+    }
+    p{
+      margin: 5px 0 0 0 ;
+      font-size: 1.1em;
+    }
+  }
+
+  @media screen and (max-width:768px)  {
+      .profile-img{
+        overflow: auto;
+        text-align: center;
+        img{
+          float: none;
+        }
+      }
+
+      .profile-intro{
+        h1, h2, p{
+          text-align: center;
+        }
+      }
+  }
+}
